@@ -7,6 +7,8 @@ const app = express();
 app.use(cors()); //cors
 app.use(express.json()); // json-parser
 
+app.use(express.static('build')); //use static react spa
+
 let phoneBook = [
   {
     id: 1,
